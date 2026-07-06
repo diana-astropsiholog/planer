@@ -1,10 +1,10 @@
 <!doctype html>
 <html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Контент-планер v9</title>
+<title>Контент-планер v12</title>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 :root{--ink:#29233d;--muted:#7b748d;--line:#e6dbff;--card:rgba(255,255,255,.80);--accent:#9d72f2;--shadow:0 18px 50px rgba(84,58,140,.16);--r:26px}
-*{box-sizing:border-box}body{margin:0;font-family:Montserrat,sans-serif;color:var(--ink);background:radial-gradient(circle at top left,#fff 0,#f7f1ff 35%,#eee6ff 100%);min-height:100vh}button,input,select,textarea{font:inherit}.app{max-width:1320px;margin:auto;padding:22px}.top{display:flex;gap:16px;align-items:center;justify-content:space-between;margin-bottom:18px}.brand{display:flex;gap:14px;align-items:center}.logo{width:52px;height:52px;border-radius:18px;background:linear-gradient(135deg,#8d63e8,#d7b8ff);box-shadow:var(--shadow);display:grid;place-items:center;color:#fff;font-weight:800}h1{font-size:25px;margin:0}.sub,.small{color:var(--muted);font-size:13px}.nav{display:flex;gap:8px;flex-wrap:wrap}.nav button,.btn{border:0;border-radius:18px;padding:13px 17px;background:rgba(255,255,255,.75);box-shadow:0 8px 24px rgba(70,49,120,.08);cursor:pointer;font-weight:700;color:var(--ink)}.nav button.active,.btn.primary{background:linear-gradient(135deg,#8f68ec,#c09cff);color:white}.grid{display:grid;grid-template-columns:310px 1fr;gap:18px}.card{background:var(--card);border:1px solid rgba(255,255,255,.65);border-radius:var(--r);box-shadow:var(--shadow);backdrop-filter:blur(16px);padding:18px}.stat{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}.stat div{background:white;border:1px solid var(--line);border-radius:18px;padding:12px}.stat b{font-size:24px;display:block}input,select,textarea{width:100%;border:1px solid var(--line);border-radius:18px;padding:13px 14px;background:rgba(255,255,255,.9);outline:none;color:#29233d}textarea{min-height:180px;resize:vertical;line-height:1.55}.toolbar{display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin-bottom:14px}.month{font-weight:800;font-size:22px}.calendar{display:grid;grid-template-columns:repeat(7,1fr);gap:10px}.dow{font-size:12px;text-align:center;color:var(--muted);font-weight:800;padding:4px}.day{min-height:126px;background:rgba(255,255,255,.76);border:1px solid var(--line);border-radius:20px;padding:10px;cursor:pointer;overflow:hidden}.day:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(77,54,130,.12)}.num{font-weight:800;margin-bottom:6px;display:flex;justify-content:space-between}.today{outline:3px solid rgba(157,114,242,.25)}.item{font-size:11px;border-radius:999px;padding:6px 8px;margin:5px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background:#f2ecff;color:#4b3b75;font-weight:700}.green{background:#e9f9f1!important;color:#21764d!important}.yellow{background:#fff6df!important;color:#95630b!important}.red{background:#fff0f0!important;color:#a23a3a!important}.list{display:flex;flex-direction:column;gap:10px}.task{background:#fff;border:1px solid var(--line);border-radius:20px;padding:13px;display:grid;gap:7px;cursor:pointer}.task-head{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}.task-title{font-weight:800}.tag{font-size:11px;border-radius:999px;padding:6px 9px;background:#f2ecff;color:#604899;font-weight:800;white-space:nowrap}.modal{position:fixed;inset:0;background:rgba(35,27,54,.32);display:none;align-items:center;justify-content:center;padding:18px;z-index:20}.modal.show{display:flex}.sheet{width:min(980px,100%);max-height:92vh;overflow:auto;background:#fbf9ff;border-radius:30px;padding:20px;box-shadow:0 30px 80px rgba(0,0,0,.25)}.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}.row3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px}.close{float:right}.section{background:white;border:1px solid var(--line);border-radius:22px;padding:14px;margin:12px 0}.section h4{margin:0 0 8px}.checks{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:8px;margin:8px 0}.check{background:#faf7ff;border:1px solid var(--line);border-radius:14px;padding:9px}.importBox textarea{min-height:330px}pre.hint{white-space:pre-wrap;background:#312944;color:white;border-radius:22px;padding:14px;font-size:12px;line-height:1.55}.fileline{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:6px 0}
+*{box-sizing:border-box}body{margin:0;font-family:Montserrat,sans-serif;color:var(--ink);background:radial-gradient(circle at top left,#fff 0,#f7f1ff 35%,#eee6ff 100%);min-height:100vh}button,input,select,textarea{font:inherit}.app{max-width:1320px;margin:auto;padding:22px}.top{display:flex;gap:16px;align-items:center;justify-content:space-between;margin-bottom:18px}.brand{display:flex;gap:14px;align-items:center}.logo{width:52px;height:52px;border-radius:18px;background:linear-gradient(135deg,#8d63e8,#d7b8ff);box-shadow:var(--shadow);display:grid;place-items:center;color:#fff;font-weight:800}h1{font-size:25px;margin:0}.sub,.small{color:var(--muted);font-size:13px}.nav{display:flex;gap:8px;flex-wrap:wrap}.nav button,.btn{border:0;border-radius:18px;padding:13px 17px;background:rgba(255,255,255,.75);box-shadow:0 8px 24px rgba(70,49,120,.08);cursor:pointer;font-weight:700;color:var(--ink)}.nav button.active,.btn.primary{background:linear-gradient(135deg,#8f68ec,#c09cff);color:white}.grid{display:grid;grid-template-columns:310px 1fr;gap:18px}.card{background:var(--card);border:1px solid rgba(255,255,255,.65);border-radius:var(--r);box-shadow:var(--shadow);backdrop-filter:blur(16px);padding:18px}.stat{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}.stat div{background:white;border:1px solid var(--line);border-radius:18px;padding:12px}.stat b{font-size:24px;display:block}input,select,textarea{width:100%;border:1px solid var(--line);border-radius:18px;padding:13px 14px;background:rgba(255,255,255,.9);outline:none;color:#29233d}textarea{min-height:180px;resize:vertical;line-height:1.55}.toolbar{display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin-bottom:14px}.month{font-weight:800;font-size:22px}.calendar{display:grid;grid-template-columns:repeat(7,1fr);gap:10px}.dow{font-size:12px;text-align:center;color:var(--muted);font-weight:800;padding:4px}.day{min-height:126px;background:rgba(255,255,255,.76);border:1px solid var(--line);border-radius:20px;padding:10px;cursor:pointer;overflow:hidden}.day:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(77,54,130,.12)}.num{font-weight:800;margin-bottom:6px;display:flex;align-items:center;justify-content:space-between;gap:4px}.day-number{font-size:18px;line-height:1}.day-count{min-width:22px;height:22px;border-radius:999px;background:#f1e8ff;color:#7c3aed;font-size:12px;display:inline-flex;align-items:center;justify-content:center}.today{outline:3px solid rgba(157,114,242,.25)}.item{font-size:11px;border-radius:999px;padding:6px 8px;margin:5px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background:#f2ecff;color:#4b3b75;font-weight:700}.green{background:#e9f9f1!important;color:#21764d!important}.yellow{background:#fff6df!important;color:#95630b!important}.red{background:#fff0f0!important;color:#a23a3a!important}.list{display:flex;flex-direction:column;gap:10px}.sub-preview{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}.sub-chip{font-size:10px;padding:5px 8px;border-radius:999px;background:#f7f1ff;color:#6b43c7;font-weight:800}.subcards{border:1px solid var(--line);border-radius:20px;padding:14px;margin-top:12px;background:#fff}.subcard{border:1px solid var(--line);border-radius:16px;padding:12px;margin:10px 0;background:#fbf9ff}.subcard input,.subcard textarea{width:100%;border:1px solid var(--line);border-radius:12px;padding:10px;font-family:inherit}.subcard textarea{min-height:90px;margin-top:8px}.subcard-actions{display:flex;gap:8px;justify-content:flex-end;margin-top:8px}.mini-btn{border:0;border-radius:12px;padding:8px 10px;background:#f1e8ff;color:#6b43c7;font-weight:800}.task{background:#fff;border:1px solid var(--line);border-radius:20px;padding:13px;display:grid;gap:7px;cursor:pointer}.task-head{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}.task-title{font-weight:800}.tag{font-size:11px;border-radius:999px;padding:6px 9px;background:#f2ecff;color:#604899;font-weight:800;white-space:nowrap}.modal{position:fixed;inset:0;background:rgba(35,27,54,.32);display:none;align-items:center;justify-content:center;padding:18px;z-index:20}.modal.show{display:flex}.sheet{width:min(980px,100%);max-height:92vh;overflow:auto;background:#fbf9ff;border-radius:30px;padding:20px;box-shadow:0 30px 80px rgba(0,0,0,.25)}.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}.row3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px}.close{float:right}.section{background:white;border:1px solid var(--line);border-radius:22px;padding:14px;margin:12px 0}.section h4{margin:0 0 8px}.checks{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:8px;margin:8px 0}.check{background:#faf7ff;border:1px solid var(--line);border-radius:14px;padding:9px}.importBox textarea{min-height:330px}pre.hint{white-space:pre-wrap;background:#312944;color:white;border-radius:22px;padding:14px;font-size:12px;line-height:1.55}.fileline{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:6px 0}
 @media(max-width:860px){.app{padding:12px}.grid{grid-template-columns:1fr}.calendar{gap:6px}.day{min-height:100px;border-radius:16px;padding:7px}.item{font-size:10px}.row,.row3{grid-template-columns:1fr}.top{align-items:flex-start;flex-direction:column}}
 
 .day-sheet{max-width:900px}
@@ -31,15 +31,15 @@ localStorage.setItem('plannerApiUrl', window.PLANNER_API_URL);
   <button class="btn primary" id="dayAddBtn">+ Добавить в этот день</button>
 </div></div>
 
-<div class="modal" id="modal"><div class="sheet"><button class="btn close" onclick="closeEditor()">Закрыть</button><h2 id="modalTitle">Карточка</h2><div class="row3"><label>Дата<input type="date" id="eDate"></label><label>Проект<select id="eProject"><option value="club">Клуб</option><option value="pages">Ведение страницы</option><option value="candles">Свечи и браслеты</option></select></label><label>Тип<select id="eType"><option>Урок</option><option>Практика</option><option>Instagram</option><option>Stories</option><option>Telegram</option><option>VK</option><option>Комментарии</option><option>Идея</option></select></label></div><div class="row"><label>Заголовок<input id="eTitle"></label><label>Статус<select id="eStatus"><option>Не начато</option><option>В работе</option><option>Готово</option><option>Опубликовано</option></select></label></div><label>Текст / заметка<textarea id="eText"></textarea></label><div class="section"><h4>Чек-лист</h4><div class="checks" id="checkList"></div><input id="newCheck" placeholder="Добавить пункт чек-листа" onkeydown="if(event.key==='Enter'){addCheck()}"></div><div class="section"><h4>Файлы</h4><input type="file" multiple onchange="addFiles(event)"><div id="files"></div><div class="small">Планер сохраняет названия файлов. Сами файлы лучше держать в одной рабочей папке.</div></div><button class="btn primary" onclick="saveEditor()">Сохранить</button><button class="btn" onclick="deleteCurrent()">Удалить</button></div></div>
+<div class="modal" id="modal"><div class="sheet"><button class="btn close" onclick="closeEditor()">Закрыть</button><h2 id="modalTitle">Карточка</h2><div class="row3"><label>Дата<input type="date" id="eDate"></label><label>Проект<select id="eProject"><option value="club">Клуб</option><option value="pages">Ведение страницы</option><option value="candles">Свечи и браслеты</option></select></label><label>Тип<select id="eType"><option>Урок</option><option>Практика</option><option>Instagram</option><option>Instagram Reels</option><option>Instagram Подпись</option><option>Instagram Обложка</option><option>Instagram Stories</option><option>Stories</option><option>Telegram</option><option>VK</option><option>VK Обложка</option><option>VK Пост</option><option>Комментарии</option><option>Идея</option></select></label></div><div class="row"><label>Заголовок<input id="eTitle"></label><label>Статус<select id="eStatus"><option>Не начато</option><option>В работе</option><option>Готово</option><option>Опубликовано</option></select></label></div><label>Текст / заметка<textarea id="eText"></textarea></label><div class="section subcards"><h4>Внутренние карточки / слайды</h4><div id="subcardsList"></div><button type="button" class="mini-btn" onclick="addSubcard()">+ Добавить слайд / карточку</button><div class="small">Для Reels это могут быть слайды текста на экране, кадры или отдельные части сценария.</div></div><div class="section"><h4>Чек-лист</h4><div class="checks" id="checkList"></div><input id="newCheck" placeholder="Добавить пункт чек-листа" onkeydown="if(event.key==='Enter'){addCheck()}"></div><div class="section"><h4>Файлы</h4><input type="file" multiple onchange="addFiles(event)"><div id="files"></div><div class="small">Планер сохраняет названия файлов. Сами файлы лучше держать в одной рабочей папке.</div></div><button class="btn primary" onclick="saveEditor()">Сохранить</button><button class="btn" onclick="deleteCurrent()">Удалить</button></div></div>
 <script>
-const STORE='dz_content_planner_v4';let state=JSON.parse(localStorage.getItem(STORE)||'{"items":[]}');let view='home',currentDate=new Date(),currentId=null,tempChecks=[],tempFiles=[];
-const months=['ЯНВАРЯ','ФЕВРАЛЯ','МАРТА','АПРЕЛЯ','МАЯ','ИЮНЯ','ИЮЛЯ','АВГУСТА','СЕНТЯБРЯ','ОКТЯБРЯ','НОЯБРЯ','ДЕКАБРЯ'];const monthMap=Object.fromEntries(months.map((m,i)=>[m,i]));const typeEmoji={Урок:'🎥',Практика:'📝',Instagram:'📷',Stories:'🟣',Telegram:'✈️',VK:'VK',Комментарии:'💬',Идея:'💡',Reels:'🎬'};
-function save(){localStorage.setItem(STORE,JSON.stringify(state))}function uid(){return Math.random().toString(36).slice(2)+Date.now().toString(36)}function iso(d){return d.toISOString().slice(0,10)}function parseIso(s){let [y,m,d]=s.split('-').map(Number);return new Date(y,m-1,d)}function projectName(p){return p==='all'?'Все проекты':p==='club'?'Клуб':p==='pages'?'Ведение страницы':'Свечи и браслеты'}function setView(v){view=v;document.querySelectorAll('.nav button').forEach(b=>b.classList.toggle('active',b.dataset.view===v));render()}document.querySelectorAll('.nav button').forEach(b=>b.onclick=()=>setView(b.dataset.view));
+const STORE='dz_content_planner_v4';let state=JSON.parse(localStorage.getItem(STORE)||'{"items":[]}');let view='home',currentDate=new Date(),currentId=null,tempChecks=[],tempFiles=[],tempSubcards=[];
+const months=['ЯНВАРЯ','ФЕВРАЛЯ','МАРТА','АПРЕЛЯ','МАЯ','ИЮНЯ','ИЮЛЯ','АВГУСТА','СЕНТЯБРЯ','ОКТЯБРЯ','НОЯБРЯ','ДЕКАБРЯ'];const monthMap=Object.fromEntries(months.map((m,i)=>[m,i]));const typeEmoji={Урок:'🎥',Практика:'📝',Instagram:'📷','Instagram Reels':'🎬','Instagram Подпись':'📷','Instagram Обложка':'🖼️','Instagram Stories':'🟣',Stories:'🟣',Telegram:'✈️',VK:'VK','VK Обложка':'🖼️','VK Пост':'VK',Комментарии:'💬',Идея:'💡',Reels:'🎬'};
+function save(){localStorage.setItem(STORE,JSON.stringify(state))}function uid(){return Math.random().toString(36).slice(2)+Date.now().toString(36)}function iso(d){const y=d.getFullYear();const m=String(d.getMonth()+1).padStart(2,'0');const day=String(d.getDate()).padStart(2,'0');return y+'-'+m+'-'+day}function parseIso(s){let [y,m,d]=s.split('-').map(Number);return new Date(y,m-1,d)}function projectName(p){return p==='all'?'Все проекты':p==='club'?'Клуб':p==='pages'?'Ведение страницы':'Свечи и браслеты'}function setView(v){view=v;document.querySelectorAll('.nav button').forEach(b=>b.classList.toggle('active',b.dataset.view===v));render()}document.querySelectorAll('.nav button').forEach(b=>b.onclick=()=>setView(b.dataset.view));
 function filtered(){let q=(document.getElementById('search')?.value||'').toLowerCase();return state.items.filter(it=>!q||JSON.stringify(it).toLowerCase().includes(q))}function stats(){const today=iso(new Date()),start=new Date();start.setDate(start.getDate()-start.getDay()+1);const end=new Date(start);end.setDate(start.getDate()+6);const f=state.items;sToday.textContent=f.filter(i=>i.date===today).length;sWeek.textContent=f.filter(i=>parseIso(i.date)>=start&&parseIso(i.date)<=end).length;sWork.textContent=f.filter(i=>i.status==='В работе').length;sDone.textContent=f.filter(i=>['Готово','Опубликовано'].includes(i.status)).length}
 function render(){stats();if(view==='home')renderHome();else if(view==='import')renderImport();else renderCalendar(view)}function statusClass(s){return s==='Готово'||s==='Опубликовано'?'green':s==='В работе'?'yellow':s==='Не начато'?'red':''}
 function renderHome(){
- const today=iso(new Date()),start=new Date();start.setDate(start.getDate()-start.getDay()+1);const end=new Date(start);end.setDate(start.getDate()+6);
+ const now=new Date();const today=iso(now),start=new Date(now.getFullYear(),now.getMonth(),now.getDate());start.setDate(start.getDate()-((start.getDay()+6)%7));const end=new Date(start);end.setDate(start.getDate()+6);
  const items=filtered().sort((a,b)=>a.date.localeCompare(b.date)||a.project.localeCompare(b.project));
  const todayItems=items.filter(i=>i.date===today);
  const weekItems=items.filter(i=>parseIso(i.date)>=start&&parseIso(i.date)<=end);
@@ -59,20 +59,21 @@ function groupedByDateHtml(arr){
  return by.map(date=>'<div class="project-group"><h3>'+fmt(date)+'</h3>'+groupedListHtml(arr.filter(i=>i.date===date))+'</div>').join('');
 }
 
-function listHtml(arr){return arr.map(it=>'<div class="task" onclick="openEditor(\''+it.id+'\')"><div class="task-head"><div><div class="task-title">'+(typeEmoji[it.type]||'•')+' '+esc(it.title||it.type)+'</div><div class="small">'+fmt(it.date)+' · '+projectName(it.project)+' · '+it.type+'</div></div><span class="tag">'+(it.status||'Не начато')+'</span></div><div class="small">'+esc((it.text||'').slice(0,180))+'</div></div>').join('')}
-function renderCalendar(project){
- const y=currentDate.getFullYear(),m=currentDate.getMonth(),first=new Date(y,m,1),last=new Date(y,m+1,0),offset=(first.getDay()+6)%7;
- let days=['ПН','ВТ','СР','ЧТ','ПТ','СБ','ВС'].map(d=>'<div class="dow">'+d+'</div>').join('');
- for(let i=0;i<offset;i++)days+='<div></div>';
- const all=filtered().filter(i=>project==='all'||i.project===project);
- for(let d=1;d<=last.getDate();d++){
-   const date=iso(new Date(y,m,d)),its=all.filter(i=>i.date===date);
-   days+='<div class="day '+(date===iso(new Date())?'today':'')+'" onclick="openDay(\''+date+'\',\''+project+'\')"><div class="num"><span>'+d+'</span><span>'+(its.length||'')+'</span></div>'+
-   its.slice(0,6).map(i=>'<div class="item '+statusClass(i.status)+'" onclick="event.stopPropagation();openEditor(\''+i.id+'\')">'+(project==='all'?projectName(i.project).slice(0,3)+' · ':'')+(typeEmoji[i.type]||'')+' '+esc(i.title||i.type)+'</div>').join('')+
-   (its.length>6?'<div class="small">+'+(its.length-6)+' ещё</div>':'')+'</div>';
+function extractSubsections(text){
+ const out=[];
+ const re=/^(#{2,3})\s+(.+)$/gm;
+ let m;
+ while((m=re.exec(text||''))){
+   let title=m[2].trim();
+   if(title) out.push({title});
  }
- main.innerHTML='<div class="card"><div class="toolbar"><button class="btn" onclick="currentDate.setMonth(currentDate.getMonth()-1);render()">←</button><div class="month">'+projectName(project)+' · '+currentDate.toLocaleString('ru-RU',{month:'long',year:'numeric'})+'</div><button class="btn" onclick="currentDate.setMonth(currentDate.getMonth()+1);render()">→</button><button class="btn primary" onclick="openEditor(null,\''+(project==='all'?'club':project)+'\')">+ Добавить</button></div><div class="calendar">'+days+'</div></div>';
+ return out;
 }
+function listHtml(arr){return arr.map(it=>{
+ const sections=(it.subcards&&it.subcards.length)?it.subcards.map(s=>({title:s.title})):extractSubsections(it.text||'');
+ const chips=sections.length?'<div class="sub-preview">'+sections.slice(0,6).map(s=>'<span class="sub-chip">'+esc(s.title)+'</span>').join('')+(sections.length>6?'<span class="sub-chip">+'+(sections.length-6)+'</span>':'')+'</div>':'';
+ return '<div class="task" onclick="openEditor(\''+it.id+'\')"><div class="task-head"><div><div class="task-title">'+(typeEmoji[it.type]||'•')+' '+esc(it.title||it.type)+'</div><div class="small">'+fmt(it.date)+' · '+projectName(it.project)+' · '+it.type+'</div></div><span class="tag">'+(it.status||'Не начато')+'</span></div><div class="small">'+esc((it.text||'').replace(/[#*_`>-]/g,'').slice(0,180))+'</div>'+chips+'</div>';
+}).join('')}
 function openDay(date,project){
  const items=filtered().filter(i=>i.date===date&&(project==='all'||i.project===project)).sort((a,b)=>a.project.localeCompare(b.project)||a.type.localeCompare(b.type));
  dayTitle.textContent=fmt(date)+' · '+projectName(project);
@@ -82,15 +83,130 @@ function openDay(date,project){
  dayModal.classList.add('show');
 }
 function closeDay(){dayModal.classList.remove('show')}function defaultChecks(type){if(type==='Урок')return ['Озвучка','Конспект','Презентация','Описание слайдов','Домашнее задание','Загружено','Проверено'].map(t=>({t,done:false}));if(['Instagram','Stories','Telegram','VK','Reels'].includes(type))return ['Текст готов','Визуал готов','Проверено','Опубликовано'].map(t=>({t,done:false}));return ['Подготовлено','Проверено','Выполнено'].map(t=>({t,done:false}))}
-function openEditor(id=null,project='club',date=iso(new Date())){currentId=id;let it=id?state.items.find(x=>x.id===id):{date,project,type:'Instagram',title:'',status:'Не начато',text:'',checks:defaultChecks('Instagram'),files:[]};eDate.value=it.date;eProject.value=it.project;eType.value=it.type;eTitle.value=it.title||'';eStatus.value=it.status||'Не начато';eText.value=it.text||'';tempChecks=JSON.parse(JSON.stringify(it.checks||defaultChecks(it.type)));tempFiles=JSON.parse(JSON.stringify(it.files||[]));modalTitle.textContent=id?'Редактировать карточку':'Новая карточка';renderChecks();renderFiles();modal.classList.add('show')}function closeEditor(){modal.classList.remove('show')}
+function openEditor(id=null,project='club',date=iso(new Date())){currentId=id;let it=id?state.items.find(x=>x.id===id):{date,project,type:'Instagram',title:'',status:'Не начато',text:'',subcards:[],checks:defaultChecks('Instagram'),files:[]};eDate.value=it.date;eProject.value=it.project;eType.value=it.type;eTitle.value=it.title||'';eStatus.value=it.status||'Не начато';eText.value=it.text||'';tempChecks=JSON.parse(JSON.stringify(it.checks||defaultChecks(it.type)));tempFiles=JSON.parse(JSON.stringify(it.files||[]));tempSubcards=JSON.parse(JSON.stringify(it.subcards||[]));modalTitle.textContent=id?'Редактировать карточку':'Новая карточка';renderChecks();renderFiles();renderSubcards();modal.classList.add('show')}function closeEditor(){modal.classList.remove('show')}
 function renderChecks(){checkList.innerHTML=tempChecks.map((c,i)=>'<label class="check"><input type="checkbox" '+(c.done?'checked':'')+' onchange="tempChecks['+i+'].done=this.checked"> '+esc(c.t)+' <button onclick="event.preventDefault();tempChecks.splice('+i+',1);renderChecks()">×</button></label>').join('')}function addCheck(){let v=newCheck.value.trim();if(v){tempChecks.push({t:v,done:false});newCheck.value='';renderChecks()}}function addFiles(ev){[...ev.target.files].forEach(f=>tempFiles.push({name:f.name,size:f.size,type:f.type,date:new Date().toLocaleString('ru-RU')}));renderFiles();ev.target.value=''}function renderFiles(){files.innerHTML=tempFiles.map((f,i)=>'<div class="fileline">📎 <b>'+esc(f.name)+'</b><span class="small">'+Math.round((f.size||0)/1024)+' КБ</span><button class="btn" onclick="tempFiles.splice('+i+',1);renderFiles()">убрать</button></div>').join('')}
-function saveEditor(){let obj={id:currentId||uid(),date:eDate.value,project:eProject.value,type:eType.value,title:eTitle.value||eType.value,status:eStatus.value,text:eText.value,checks:tempChecks,files:tempFiles};if(currentId){let ix=state.items.findIndex(x=>x.id===currentId);state.items[ix]=obj}else state.items.push(obj);save();closeEditor();render()}function deleteCurrent(){if(currentId&&confirm('Удалить карточку?')){state.items=state.items.filter(x=>x.id!==currentId);save();closeEditor();render()}}
+
+function renderSubcards(){
+ const box=document.getElementById('subcardsList');
+ if(!box)return;
+ box.innerHTML=(tempSubcards||[]).map((s,i)=>'<div class="subcard"><input value="'+esc(s.title||('Слайд '+(i+1)))+'" oninput="tempSubcards['+i+'].title=this.value" placeholder="Название: Слайд 1"><textarea oninput="tempSubcards['+i+'].text=this.value" placeholder="Текст слайда / кадра">'+esc(s.text||'')+'</textarea><div class="subcard-actions"><button type="button" class="mini-btn" onclick="moveSubcard('+i+',-1)">↑</button><button type="button" class="mini-btn" onclick="moveSubcard('+i+',1)">↓</button><button type="button" class="mini-btn" onclick="removeSubcard('+i+')">Удалить</button></div></div>').join('');
+}
+function addSubcard(){
+ tempSubcards.push({title:'Слайд '+(tempSubcards.length+1),text:''});
+ renderSubcards();
+}
+function removeSubcard(i){
+ tempSubcards.splice(i,1);
+ renderSubcards();
+}
+function moveSubcard(i,dir){
+ const j=i+dir;
+ if(j<0||j>=tempSubcards.length)return;
+ const t=tempSubcards[i];tempSubcards[i]=tempSubcards[j];tempSubcards[j]=t;
+ renderSubcards();
+}
+
+function saveEditor(){let obj={id:currentId||uid(),date:eDate.value,project:eProject.value,type:eType.value,title:eTitle.value||eType.value,status:eStatus.value,text:eText.value,subcards:tempSubcards,checks:tempChecks,files:tempFiles};if(currentId){let ix=state.items.findIndex(x=>x.id===currentId);state.items[ix]=obj}else state.items.push(obj);save();closeEditor();render()}function deleteCurrent(){if(currentId&&confirm('Удалить карточку?')){state.items=state.items.filter(x=>x.id!==currentId);save();closeEditor();render()}}
 function renderImport(){main.innerHTML='<div class="card importBox"><h2>Импорт контент-плана из ответа ChatGPT</h2><div class="row3"><label>Куда импортировать<select id="impProject"><option value="pages">Ведение страницы</option><option value="club">Клуб</option><option value="candles">Свечи и браслеты</option></select></label><label>Год для дат без года<input id="impYear" type="number" value="'+new Date().getFullYear()+'"></label><label>Статус<select id="impStatus"><option>Не начато</option><option>В работе</option></select></label></div><textarea id="impText" placeholder="Вставь сюда план в формате: # 1 ИЮЛЯ ... # INSTAGRAM ... # TELEGRAM ... # ВК ..."></textarea><button class="btn" onclick="document.getElementById(\'txtFile\').click()">Загрузить TXT/MD</button><input id="txtFile" type="file" accept=".txt,.md" hidden onchange="loadTxt(event)"><button class="btn primary" onclick="doImport()">Разложить по календарю</button><div id="impResult" class="small" style="margin-top:12px"></div><pre class="hint">Вставляешь целый план с заголовками # 1 ИЮЛЯ, # INSTAGRAM, # STORIES, # TELEGRAM, # ВК. Каждый раздел станет отдельной карточкой на нужную дату. Весь большой текст сохранится внутри карточки.</pre></div>'}
 function loadTxt(e){let f=e.target.files[0];if(!f)return;let r=new FileReader();r.onload=()=>impText.value=r.result;r.readAsText(f)}
 function doImport(){const created=parsePlan(impText.value,impProject.value,+impYear.value,impStatus.value);state.items.push(...created);save();impResult.textContent='Готово: создано карточек — '+created.length;stats()}
 function parsePlan(text,project,year,status){text=text.replace(/\r/g,'');const dateRe=/^#\s*(\d{1,2})\s+([А-ЯЁа-яё]+)(?:\s+(\d{4}))?\s*$/gm;let matches=[...text.matchAll(dateRe)],out=[];for(let i=0;i<matches.length;i++){const m=matches[i],start=m.index+m[0].length,end=i<matches.length-1?matches[i+1].index:text.length,day=+m[1],mon=monthMap[m[2].toUpperCase()],y=m[3]?+m[3]:year;if(mon==null)continue;out.push(...parseDay(text.slice(start,end).trim(),iso(new Date(y,mon,day)),project,status))}return out}
-function parseDay(block,date,project,status){const aliases=[['Instagram','INSTAGRAM|ИНСТАГРАМ|ИНСТА'],['Stories','STORIES|СТОРИС'],['Telegram','TELEGRAM|ТЕЛЕГРАМ'],['VK','ВК|VK'],['Комментарии','ЧТО ОТВЕЧАТЬ В КОММЕНТАРИЯХ|КОММЕНТАРИИ'],['Урок','УРОК'],['Практика','ПРАКТИКА']];let heads=[],re=/^#\s+(.+)$/gm,mm;while((mm=re.exec(block)))heads.push({raw:mm[1].trim(),idx:mm.index,len:mm[0].length});let items=[];if(!heads.length){items.push(makeItem(date,project,'Идея','План дня',block,status));return items}let before=block.slice(0,heads[0].idx).trim();if(before)items.push(makeItem(date,project,'Идея','Главная мысль дня',before,status));for(let i=0;i<heads.length;i++){let h=heads[i],content=block.slice(h.idx+h.len,i<heads.length-1?heads[i+1].idx:block.length).trim(),type='Идея',title=h.raw;for(const [t,pat] of aliases){if(new RegExp('^('+pat+')$','i').test(h.raw)){type=t;title=t;break}}if(project==='candles'&&['Идея','Instagram'].includes(type))type='Instagram';items.push(makeItem(date,project,type,title,content,status))}return items}
-function makeItem(date,project,type,title,text,status){return{id:uid(),date,project,type,title,status,text,checks:defaultChecks(type),files:[]}}function exportData(){let blob=new Blob([JSON.stringify(state,null,2)],{type:'application/json'});let a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='content-planner-backup.json';a.click()}function importJson(e){let f=e.target.files[0];if(!f)return;let r=new FileReader();r.onload=()=>{try{state=JSON.parse(r.result);save();render()}catch{alert('Не получилось импортировать JSON')}};r.readAsText(f)}function clearAll(){if(confirm('Удалить все данные планера?')){state={items:[]};save();render()}}function fmt(s){return parseIso(s).toLocaleDateString('ru-RU',{day:'numeric',month:'long',weekday:'short'})}function esc(s=''){return String(s).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]))}render();
+function parseDay(block,date,project,status){
+ const aliases=[['Instagram','INSTAGRAM|ИНСТАГРАМ|ИНСТА'],['Stories','STORIES|СТОРИС'],['Telegram','TELEGRAM|ТЕЛЕГРАМ'],['VK','ВК|VK'],['Комментарии','ЧТО ОТВЕЧАТЬ В КОММЕНТАРИЯХ|КОММЕНТАРИИ'],['Урок','УРОК'],['Практика','ПРАКТИКА']];
+ let heads=[],re=/^#\s+(.+)$/gm,mm;
+ while((mm=re.exec(block)))heads.push({raw:mm[1].trim(),idx:mm.index,len:mm[0].length});
+ let items=[];
+ if(!heads.length){items.push(makeItem(date,project,'Идея','План дня',block,status));return items}
+ let before=block.slice(0,heads[0].idx).trim();
+ if(before)items.push(makeItem(date,project,'Идея','Главная мысль дня',before,status));
+ for(let i=0;i<heads.length;i++){
+   let h=heads[i],content=block.slice(h.idx+h.len,i<heads.length-1?heads[i+1].idx:block.length).trim(),type='Идея',title=h.raw;
+   for(const [t,pat] of aliases){if(new RegExp('^('+pat+')$','i').test(h.raw)){type=t;title=t;break}}
+   if(project==='candles'&&['Идея','Instagram'].includes(type))type='Instagram';
+   const sub=splitPlatformContent(type,content);
+   if(sub.length){
+     sub.forEach(s=>items.push(makeItem(date,project,s.type,s.title,s.text,status,s.subcards||[])));
+   }else{
+     items.push(makeItem(date,project,type,title,content,status));
+   }
+ }
+ return items;
+}
+
+
+function splitReelsSubcards(text){
+ const sub=[];
+ const screenMatch=(text||'').match(/###\s*(Текст на экране|Текст для экрана|Слайды|Кадры текста)\s*([\s\S]*?)(?=\n###\s+|\n##\s+|$)/i);
+ if(screenMatch){
+   let raw=screenMatch[2].trim();
+   let lines=raw.split(/\n+/).map(x=>x.trim()).filter(Boolean).filter(x=>!/^[-–—]+$/.test(x));
+   let buf=[];
+   lines.forEach(line=>{
+     line=line.replace(/^\d+[\).\s-]+/,'').trim();
+     if(!line)return;
+     // если строка начинается как явный слайд — начинаем новую карточку
+     const sm=line.match(/^(слайд|кадр)\s*\d+[:.\-]?\s*(.*)$/i);
+     if(sm){
+       if(buf.length){sub.push({title:'Слайд '+(sub.length+1),text:buf.join('\n')});buf=[]}
+       if(sm[2])buf.push(sm[2]);
+     }else{
+       // каждая смысловая строка становится отдельным слайдом
+       sub.push({title:'Слайд '+(sub.length+1),text:line});
+     }
+   });
+   if(buf.length)sub.push({title:'Слайд '+(sub.length+1),text:buf.join('\n')});
+ }
+ if(!sub.length){
+   const videoMatch=(text||'').match(/###\s*(Видео|Кадры|Сценарий)\s*([\s\S]*?)(?=\n###\s+|\n##\s+|$)/i);
+   if(videoMatch){
+     let lines=videoMatch[2].split(/\n+/).map(x=>x.trim()).filter(Boolean);
+     lines.forEach(line=>{
+       line=line.replace(/^\d+[\).\s-]+/,'').trim();
+       if(line)sub.push({title:'Кадр '+(sub.length+1),text:line});
+     });
+   }
+ }
+ return sub;
+}
+
+function splitPlatformContent(type,content){
+ const parts=splitByMarkdownHeads(content);
+ if(!parts.length)return [];
+ if(type==='Instagram'){
+   return parts.map(p=>{
+     const h=p.title.toLowerCase();
+     let t='Instagram', title='Instagram '+p.title, subcards=[];
+     if(h.includes('reels')||h.includes('рилс')){t='Instagram Reels';title='Instagram Reels';subcards=splitReelsSubcards(p.text)}
+     else if(h.includes('подпис')){t='Instagram Подпись';title='Instagram Подпись'}
+     else if(h.includes('облож')){t='Instagram Обложка';title='Instagram Обложка Reels'}
+     return {type:t,title,text:p.text,subcards};
+   });
+ }
+ if(type==='Stories'){
+   return parts.map((p,idx)=>({type:'Instagram Stories',title:p.title.match(/сторис/i)?p.title:'Сторис '+(idx+1),text:p.text}));
+ }
+ if(type==='VK'){
+   return parts.map(p=>{
+     const h=p.title.toLowerCase();
+     if(h.includes('оформ')||h.includes('облож')||h.includes('картин'))return {type:'VK Обложка',title:'VK Обложка',text:p.text};
+     if(h.includes('пост')||h.includes('текст'))return {type:'VK Пост',title:'VK Пост',text:p.text};
+     return {type:'VK',title:'VK '+p.title,text:p.text};
+   });
+ }
+ return [];
+}
+
+function splitByMarkdownHeads(content){
+ const re=/^##+\s+(.+)$/gm;
+ let matches=[...content.matchAll(re)];
+ if(!matches.length)return [];
+ return matches.map((m,i)=>{
+   const start=m.index+m[0].length;
+   const end=i<matches.length-1?matches[i+1].index:content.length;
+   return {title:m[1].trim(),text:content.slice(start,end).trim()};
+ }).filter(p=>p.text||p.title);
+}
+function makeItem(date,project,type,title,text,status,subcards){return{id:uid(),date,project,type,title,status,text,subcards:subcards||[],checks:defaultChecks(type),files:[]}}function exportData(){let blob=new Blob([JSON.stringify(state,null,2)],{type:'application/json'});let a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='content-planner-backup.json';a.click()}function importJson(e){let f=e.target.files[0];if(!f)return;let r=new FileReader();r.onload=()=>{try{state=JSON.parse(r.result);save();render()}catch{alert('Не получилось импортировать JSON')}};r.readAsText(f)}function clearAll(){if(confirm('Удалить все данные планера?')){state={items:[]};save();render()}}function fmt(s){return parseIso(s).toLocaleDateString('ru-RU',{day:'numeric',month:'long',weekday:'short'})}function esc(s=''){return String(s).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]))}render();
 </script>
 
 
